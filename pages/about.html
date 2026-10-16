@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>О проекте — mediacenter</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../index.html"><span class="dot"></span>mediacenter</a>
+  <nav>
+    <a href="../index.html">Главная</a>
+    <a href="features.html">Что умеет</a>
+    <a href="download.html">Установка</a>
+    <a href="about.html" class="active">О проекте</a>
+  </nav>
+  <a class="gh" href="https://github.com/notkovvik/mediacenter" target="_blank" rel="noopener">GitHub ↗</a>
+</header>
+
+<main>
+  <p class="subhead">// about.txt</p>
+  <h2>Зачем это вообще</h2>
+  <p class="lede">Существующие медиацентры — либо монстры вроде Plex, которые хотят аккаунт, подписку и половину твоих метаданных, либо самопальные скрипты, которые ломаются от каждого обновления Kodi. Захотелось третий вариант.</p>
+
+  <div class="box"><h3>Принципы</h3><p>— Один бинарник, ноль зависимостей.<br>— Никаких облаков и телеметрии.<br>— Должен запускаться на любом чайнике с Linux.<br>— Конфиг пишется человеком, а не YAML-фетишистом.</p></div>
+  <div class="box"><h3>Стек</h3><p>Go для бэкенда, vanilla JS для фронта. SQLite для метаданных. Никаких React, никаких SPA-фреймворков — обычный серверный рендеринг, как в 2008.</p></div>
+  <div class="box"><h3>Автор</h3><p>Максим (<a href="https://github.com/notkovvik" target="_blank" rel="noopener">@notkovvik</a>). Пишу под себя, выкладываю на случай, если кому-то ещё пригодится.</p></div>
+  <div class="box"><h3>Лицензия</h3><p>MIT. Делай что хочешь, только упомяни автора.</p></div>
+
+  <p class="subhead" style="margin-top:48px">// contributing.md</p>
+  <h2>Чем помочь</h2>
+  <ol class="steps">
+    <li>Завёл issue — опиши баг или фичу, без шаблонов</li>
+    <li>Хочешь PR — форкни, поправь, открой pull request</li>
+    <li>Нашёл косяк в метаданных — кинь пример файла в issue</li>
+    <li>Просто звёзды на гитхабе — тоже норм</li>
+  </ol>
+</main>
+
+<footer>
+  <span>© 2026 notkovvik</span>
+  <a href="https://github.com/notkovvik/mediacenter" target="_blank" rel="noopener">github.com/notkovvik/mediacenter</a>
+</footer>
+</body>
+</html>
