@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Установка — mediacenter</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../index.html"><span class="dot"></span>mediacenter</a>
+  <nav>
+    <a href="../index.html">Главная</a>
+    <a href="features.html">Что умеет</a>
+    <a href="download.html" class="active">Установка</a>
+    <a href="about.html">О проекте</a>
+  </nav>
+  <a class="gh" href="https://github.com/notkovvik/mediacenter" target="_blank" rel="noopener">GitHub ↗</a>
+</header>
+
+<main>
+  <p class="subhead">// install.md</p>
+  <h2>Поставить за пять минут</h2>
+  <p class="lede">mediacenter — это один бинарник + папка с твоей медиатекой. Никаких баз данных, никаких докер-композов на 200 строк.</p>
+
+  <p class="subhead">// linux & macos</p>
+  <ol class="steps">
+    <li>Скачай последний релиз: <code>curl -L -o mc.tar.gz https://github.com/notkovvik/mediacenter/releases/latest</code></li>
+    <li>Распакуй: <code>tar -xzf mc.tar.gz && cd mc</code></li>
+    <li>Запусти: <code>./mediacenter --dir ~/Media</code></li>
+    <li>Открой <code>http://localhost:8080</code> в браузере.</li>
+  </ol>
+
+  <p class="subhead">// windows</p>
+  <ol class="steps">
+    <li>Скачай <code>mediacenter.exe</code> со страницы релизов</li>
+    <li>Положи в любую папку, например <code>C:\mediacenter\</code></li>
+    <li>Запусти из PowerShell: <code>.\mediacenter.exe --dir D:\Media</code></li>
+    <li>Открой <code>http://localhost:8080</code></li>
+  </ol>
+
+  <div class="box"><h3>Хочешь собрать из исходников?</h3><p>Клонируй репу, загляни в <code>README.md</code>. Там есть инструкция для Go 1.22+ и Node 20+ (под фронт).</p></div>
+  <div class="box"><h3>Нужен домен?</h3><p>По умолчанию mediacenter слушает только <code>127.0.0.1</code>. Для доступа из локалки запусти с флагом <code>--lan</code>.</p></div>
+
+  <p class="subhead" style="margin-top:48px">// questions.log</p>
+  <h2>Частые вопросы</h2>
+  <div class="box"><h3>А онлайн-кинотеатры подключаются?</h3><p>Нет. Только твои локальные файлы. Это принципиальная позиция.</p></div>
+  <div class="box"><h3>Сколько весит?</h3><p>Бинарник — около 12 МБ. Индекс метаданных для библиотеки в 5 ТБ — меньше 200 МБ.</p></div>
+  <div class="box"><h3>Можно поставить на NAS?</h3><p>Да. Под arm64 тоже собирается — Synology, QNAP, обычный Raspberry Pi.</p></div>
+</main>
+
+<footer>
+  <span>© 2026 notkovvik</span>
+  <a href="https://github.com/notkovvik/mediacenter" target="_blank" rel="noopener">github.com/notkovvik/mediacenter</a>
+</footer>
+</body>
+</html>
