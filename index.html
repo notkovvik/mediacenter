@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Вход — Медиацентр «КвАДРат»</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <img src="assets/21.webp" alt="Школа 21" class="logo" onerror="this.onerror = null; this.src = 'assets/logo-placeholder.svg';">
+    <h1>Медиацентр «КвАДРат»</h1>
+    <p class="subtitle">Школа №21</p>
+  </header>
+  <main class="container">
+    <div class="card">
+      <h2>Вход для участников медиацентра</h2>
+      <p>Нажмите кнопку ниже и войдите через свой аккаунт ВК.</p>
+      <div id="vk-login-container"></div>
+    </div>
+  </main>
+  <script src="https://unpkg.com/@vkid/sdk@2.6.9/dist-sdk/umd/index.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
